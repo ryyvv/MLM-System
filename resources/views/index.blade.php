@@ -29,12 +29,12 @@
                 </thead>
                 <tbody>
                     {{$Dataclients.id}}
-                    @foreach ($Dataclients as $dataclients)
+                    @foreach ($Dataclients as $dataclient)
                         <tr>
-                            <td>{{ $dataclients->id }}</td>
-                            <td>{{ $dataclients->name }}</td>
-                            <td>{{ $dataclients->email }}</td>
-                            <td>{{ $dataclients->address }}</td>
+                            <td>{{ $dataclient->id }}</td>
+                            <td>{{ $dataclient->name }}</td>
+                            <td>{{ $dataclient->email }}</td>
+                            <td>{{ $dataclient->address }}</td>
                             <td>
                                 <form action="{{ route('students.destroy',$student->id) }}" method="Post">
                                     <a class="btn btn-primary" href="{{ route('students.edit',$student->id) }}">Edit</a>
